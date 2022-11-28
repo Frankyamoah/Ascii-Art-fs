@@ -11,7 +11,7 @@ func main() {
 	// Take in users input ensuring that more than one arguement is entered
 	input := os.Args[1:]
 	// returns nothing if one or less args entered
-	if len(input) != 2 {
+	if len(input) < 2 {
 		return
 	}
 	// goes through each character in the input and checks if its outside bounds of
