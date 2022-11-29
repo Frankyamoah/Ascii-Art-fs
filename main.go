@@ -22,7 +22,7 @@ func main() {
 			return
 		}
 	}
-	// This reads the standard.txt file and checks for error
+	// This reads the 2nd argument to see which fone to use
 	font := os.Args[2]
 	bytes, err := ioutil.ReadFile(font + ".txt")
 	if err != nil {
