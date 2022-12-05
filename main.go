@@ -11,7 +11,10 @@ func main() {
 	// Take in users input ensuring that more than one arguement is entered
 	input := os.Args[1:]
 	// returns nothing if one or less args entered
-	if len(input) < 2 {
+	if len(input) != 2 {
+		fmt.Println("Usage go run . [STRING] [BANNER]")
+		fmt.Println()
+		fmt.Println("EX: go run . something standard")
 		return
 	}
 	// goes through each character in the input and checks if its outside bounds of
